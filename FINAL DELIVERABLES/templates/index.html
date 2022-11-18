@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background: url("../static/img/img8.jpg") no-repeat center fixed;
+            background-size: cover;
+        }
+
+        .t {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-size-adjust: 45px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Delay Prediction</title>
+</head>
+
+<body>
+    <h1 class="t"> FLIGHT DELAY PREDICTION </h1>
+
+    <h2> ENTER THE DETAILS </h2>
+    <form action='/y_predict' , method='post'>
+        <br>
+        Enter name: <br>
+        <input type="radio" id="1" name="name" value="1" /><label>Air Asia</label><br>
+        <input type="radio" id="2" name="name" value="2" /><label>Air India</label><br>
+        <input type="radio" id="3" name="name" value="3" /><label>IndiGo</label><br>
+        <input type="radio" id="4" name="name" value="4" /><label>Blue Dart</label><br>
+        <input type="radio" id="5" name="name" value="5" /><label>Star Air</label><br>
+        <br>
+
+        Enter month : <input type="text" name="Month" placeholder="Month" required="required" />
+        <br><br>
+        Enter dayofmonth : <input type="text" name="dayofmonth" placeholder="dayofmonth" required="required" />
+        <br><br>
+        Enter dayofweek : <input type="text" name="dayofweek" placeholder="dayofweek" required="required" />
+        <br><br>
+        Enter origin : <input type="text" name="origin" placeholder="origin" required="required" />
+        <br><br>
+        Enter destination :<input type="text" name="destination" placeholder="destination" required="required" />
+        <br><br>
+        Enter dept : <input type="text" name="dept" placeholder="dept" required="required" />
+        <br><br>
+        Enter arrtime : <input type="text" name="arrtime" placeholder="arrtime" required="required" />
+        <br><br>
+        Enter actdept : <input type="text" name="actdept" placeholder="actdept" required="required" />
+        <br><br>
+
+
+        <input type="submit" value="Predict" />
+
+    </form>
+
+</body>
+
+</html>
